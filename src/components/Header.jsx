@@ -11,11 +11,11 @@ const Header = () => {
       </div>
       <div className='flex justify-center gap-4'>
         <div className='flex items-center'>
-          <PhoneIcon/>
+          <PhoneIcon fill='#C7A99A' width="16" height="16"/>
         </div>
         <div className='flex items-center'>
           <button>
-            <MenuIcon/>
+            <MenuIcon fill='#C7A99A' width="20" height="15"/>
           </button>
         </div>
       </div>
