@@ -1,4 +1,3 @@
-// import logo from '../assets/logo/logo-min.svg'
 import Logo from '../assets/logo/logo-min.svg'
 import PhoneIcon from '../assets/logo/social_links/phone.svg'
 import MenuIcon from '../assets/logo/ui/list.svg'
@@ -7,18 +6,18 @@ const Header = () => {
   return (
     <header className="flex justify-between p-5 bg-[#1C3454]">
       <div>
-      <Logo/>
+      <Logo width="120"/>
       </div>
-      <div className='flex justify-center gap-4'>
+      <nav className='flex justify-center gap-4'>
         <div className='flex items-center'>
           <PhoneIcon fill='#C7A99A' width="16" height="16"/>
         </div>
         <div className='flex items-center'>
           <button>
-            <MenuIcon fill='#C7A99A' width="20" height="15"/>
+            <MenuIcon fill='#C7A99A' width="30" height="30"/>
           </button>
         </div>
-      </div>
+      </nav>
     </header>
   )
 }
