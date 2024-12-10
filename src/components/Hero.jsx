@@ -10,7 +10,7 @@ const Hero = () => {
             <h3 className="hidden">Pas de hasard, que des rendez-vous</h3>
           </div>
         </div>
-        <button>Découvrir le menu</button>
+        <button className="px-4 py-3 rounded-md bg-[#C7A99A] text-[#F2F2F2]">Découvrir le menu</button>
       </div>
     </section>
   )
