@@ -41,6 +41,7 @@ const Footer = () => {
           <li className='m-auto'><TripadvisorIcon fill='#C7A99A'/></li>
         </ul>
       </div>
+      <p className='mt-8 font-thin text-slate-500'>© 2024 Le Lazare. Tous droits réservés.</p>
     </footer>
   )
 }
