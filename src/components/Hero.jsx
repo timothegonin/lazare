@@ -1,7 +1,10 @@
+import LazareLogo from '../assets/logo/lazare-logo.svg'
+
 const Hero = () => {
   return (
-    <section>
-      <div className="bg-[url('/src/assets/logo/logo.svg')] bg-clip-border bg-cover bg-no-repeat bg-center h-[267px]">
+    <section className='bg-[#1C3454]'>
+      <div className="bg-[#1C3454] h-[267px]">
+        <LazareLogo className="w-full h-full"/>
         <h1 className="hidden">Lazare</h1>
       </div>
       <div className="bg-[url('/src/assets/images/recipe.jpg')] bg-clip-border bg-cover bg-no-repeat bg-center h-[550px]">
