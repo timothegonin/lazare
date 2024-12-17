@@ -5,12 +5,12 @@ import InstagramIcon from '../assets/logo/social_links/instagram.svg'
 import TripadvisorIcon from '../assets/logo/social_links/tripadvisor.svg'
 import GeoIcon from '../assets/logo/social_links/geo.svg'
 
-const SideMenu = () => {
+const SideMenu = ({ status, statusHandler}) => {
   return (
-    <aside className="fixed top-0 left-0 bottom-0 right-0">
+    <aside className={`${status ? 'fixed' : 'hidden'} top-0 left-0 bottom-0 right-0`}>
       <div className="flex flex-col items-end h-full" style={{backgroundColor : "rgb(102,117,149,0.85)"}}>
         <div className="h-full w-1/2 min-w-[218px] flex flex-col items-start p-6 gap-4 bg-[#1C3454]">
-          <button><CrossIcon fill="#C7A99A"/></button>
+          <button onClick={() => statusHandler()}><CrossIcon fill="#C7A99A"/></button>
           <nav className='mt-6'>
             <ul className='flex flex-col items-start gap-4 text-[#C7A99A]'>
               <li>Accueil</li>
