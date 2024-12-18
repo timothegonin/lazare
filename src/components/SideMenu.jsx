@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import CrossIcon from '../assets/logo/ui/cross.svg'
 import PhoneIcon from '../assets/logo/social_links/phone.svg'
 import FacebookIcon from '../assets/logo/social_links/facebook.svg'
@@ -35,6 +36,11 @@ const SideMenu = ({ status, statusHandler}) => {
       </div>
     </aside>
   )
+}
+
+SideMenu.propTypes = {
+  status: PropTypes.bool,
+  statusHandler: PropTypes.func,
 }
 
 export default SideMenu
