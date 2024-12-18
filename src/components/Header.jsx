@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import Logo from '../assets/logo/logo-min.svg'
 import PhoneIcon from '../assets/logo/social_links/phone.svg'
 import MenuIcon from '../assets/logo/ui/list.svg'
@@ -20,6 +21,10 @@ const Header = ({statusHandler}) => {
       </nav>
     </header>
   )
+}
+
+Header.propTypes = {
+  statusHandler: PropTypes.func,
 }
 
 export default Header
