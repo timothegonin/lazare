@@ -5,6 +5,7 @@ import SideMenu from './components/SideMenu'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
 import Menu from './pages/Menu'
+import Formules from './pages/Formules'
 import './App.css'
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/menu" element={<Menu />} />
+          <Route path="/formules" element={<Formules />} />
         </Routes>
       </BrowserRouter>
       <Footer />
