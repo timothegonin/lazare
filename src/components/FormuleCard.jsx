@@ -15,13 +15,15 @@ const FormuleCard = () => {
     )
   }
 
+  const formuleDetailsStatus = isOpen ? '' : 'hidden'
+
   return (
-    <article className="flex flex-col items-start">
+    <article className="flex flex-col items-start bg-white rounded p-3">
       <div className="flex justify-between w-full font-bold">
         <h4>MENU DE L&apos;AUTOMNE À L&apos;HIVER</h4>
         <h5>59€</h5>
       </div>
-      <div className={isOpen ? '' : 'hidden'}>
+      <div className={`${formuleDetailsStatus} flex flex-col gap-5`}>
         <table className="text-left w-4/5">
           <tr>
             <th>AMUSE BOUCHE</th>
