@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from 'react-router'
+import { Routes, Route } from 'react-router'
 import Header from './components/Header'
 import SideMenu from './components/SideMenu'
 import Hero from './components/Hero'
@@ -21,13 +21,11 @@ function App() {
       <Header statusHandler={sideMenuHandler} />
       <SideMenu status={sideMenuDisplay} statusHandler={sideMenuHandler} />
       <Hero />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/formules" element={<Formules />} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/formules" element={<Formules />} />
+      </Routes>
       <Footer />
     </>
   )
