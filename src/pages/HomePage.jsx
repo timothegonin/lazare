@@ -1,3 +1,5 @@
+import { Link } from 'react-router'
+
 const HomePage = () => {
   return (
     <div className="bg-[url('/src/assets/images/recipe.jpg')] bg-clip-border bg-cover bg-no-repeat bg-center h-[550px]">
@@ -12,9 +14,12 @@ const HomePage = () => {
           Pas de hasard, que des rendez-vous
         </h3>
       </div>
-      <button className="px-4 py-3 rounded-md bg-[#C7A99A] text-[#F2F2F2]">
-        Découvrir le menu
-      </button>
+      <Link
+        to="/menu"
+        className="px-4 py-3 rounded-md bg-[#C7A99A] text-[#F2F2F2]"
+      >
+        Découvrir la carte & les menus
+      </Link>
     </div>
   )
 }
