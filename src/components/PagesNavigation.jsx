@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router'
+import { NavLink, useLocation } from 'react-router'
 
 const PagesNavigation = () => {
   const location = useLocation()
@@ -8,12 +8,28 @@ const PagesNavigation = () => {
 
   return (
     <nav
-      className={`flex ${navBarLinksOrder} justify-evenly h-[115px] bg-[#1C3454]`}
+      className={`flex ${navBarLinksOrder} justify-evenly items-center h-[115px] bg-[#1C3454]`}
     >
-      <button className="text-2xl font-bold text-white underline">
+      <NavLink
+        to="/menu"
+        className="text-2xl font-bold"
+        style={({ isActive }) => ({
+          color: isActive ? 'white' : '#C7A99A',
+          textDecoration: isActive ? 'underline' : 'none',
+        })}
+      >
         La carte
-      </button>
-      <button className="text-2xl font-bold text-[#C7A99A]">Les menus</button>
+      </NavLink>
+      <NavLink
+        to="/formules"
+        className="text-2xl font-bold"
+        style={({ isActive }) => ({
+          color: isActive ? 'white' : '#C7A99A',
+          textDecoration: isActive ? 'underline' : 'none',
+        })}
+      >
+        Les menus
+      </NavLink>
     </nav>
   )
 }
