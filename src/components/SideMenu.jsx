@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router'
+import CallTo from './CallTo'
 import CrossIcon from '../assets/logo/ui/cross.svg'
 import PhoneIcon from '../assets/logo/social_links/phone.svg'
 import FacebookIcon from '../assets/logo/social_links/facebook.svg'
@@ -54,7 +55,7 @@ const SideMenu = ({ status, statusHandler }) => {
           </nav>
           <button className="flex items-center justify-between gap-4 my-4 py-2 px-2 rounded text-white bg-[#C7A99A]">
             <PhoneIcon />
-            04 68 21 60 42
+            <CallTo phone="+33468216042">04 68 21 60 42</CallTo>
           </button>
           <ul className="list-none flex flex-row gap-4 ">
             <li className="m-auto">
