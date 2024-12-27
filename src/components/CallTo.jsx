@@ -6,7 +6,6 @@ const CallTo = ({ phone, children }) => {
 
 CallTo.propTypes = {
   phone: PropTypes.string,
-  children: PropTypes.element,
+  children: PropTypes.oneOfType([PropTypes.element, PropTypes.string]),
 }
-
 export default CallTo
