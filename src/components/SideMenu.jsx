@@ -59,13 +59,31 @@ const SideMenu = ({ status, statusHandler }) => {
           </button>
           <ul className="list-none flex flex-row gap-4 ">
             <li className="m-auto">
-              <FacebookIcon fill="#C7A99A" />
+              <a
+                href="https://www.facebook.com/profile.php?id=61568418431280"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FacebookIcon fill="#C7A99A" />
+              </a>
             </li>
             <li className="m-auto">
-              <InstagramIcon fill="#C7A99A" />
+              <a
+                href="https://www.instagram.com/lazareperpignan/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <InstagramIcon fill="#C7A99A" />
+              </a>
             </li>
             <li className="m-auto">
-              <TripadvisorIcon fill="#C7A99A" />
+              <a
+                href="https://www.tripadvisor.com/Restaurant_Review-g187156-d31121962-Reviews-Le_Lazare-Perpignan_Pyrenees_Orientales_Occitanie.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <TripadvisorIcon fill="#C7A99A" />
+              </a>
             </li>
           </ul>
           <ul className="list-none flex flex-row gap-4 justify-start text-[#F2F2F2] text-left">
