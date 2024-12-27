@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router'
 import CallTo from './CallTo'
+import ExternalLink from './ExternalLink'
 import CrossIcon from '../assets/logo/ui/cross.svg'
 import PhoneIcon from '../assets/logo/social_links/phone.svg'
 import FacebookIcon from '../assets/logo/social_links/facebook.svg'
@@ -59,31 +60,19 @@ const SideMenu = ({ status, statusHandler }) => {
           </button>
           <ul className="list-none flex flex-row gap-4 ">
             <li className="m-auto">
-              <a
-                href="https://www.facebook.com/profile.php?id=61568418431280"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <ExternalLink url="https://www.facebook.com/profile.php?id=61568418431280">
                 <FacebookIcon fill="#C7A99A" />
-              </a>
+              </ExternalLink>
             </li>
             <li className="m-auto">
-              <a
-                href="https://www.instagram.com/lazareperpignan/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <ExternalLink url="https://www.instagram.com/lazareperpignan/">
                 <InstagramIcon fill="#C7A99A" />
-              </a>
+              </ExternalLink>
             </li>
             <li className="m-auto">
-              <a
-                href="https://www.tripadvisor.com/Restaurant_Review-g187156-d31121962-Reviews-Le_Lazare-Perpignan_Pyrenees_Orientales_Occitanie.html"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <ExternalLink url="https://www.tripadvisor.com/Restaurant_Review-g187156-d31121962-Reviews-Le_Lazare-Perpignan_Pyrenees_Orientales_Occitanie.html">
                 <TripadvisorIcon fill="#C7A99A" />
-              </a>
+              </ExternalLink>
             </li>
           </ul>
           <ul className="list-none flex flex-row gap-4 justify-start text-[#F2F2F2] text-left">
