@@ -1,23 +1,58 @@
 import PropTypes from 'prop-types'
 import { NavLink } from 'react-router'
+import ExternalLink from './ExternalLink'
 import CallTo from './CallTo'
 import Logo from '../assets/logo/logo-min.svg'
 import PhoneIcon from '../assets/logo/social_links/phone.svg'
 import MenuIcon from '../assets/logo/ui/list.svg'
+import FacebookIcon from '../assets/logo/social_links/facebook.svg'
+import InstagramIcon from '../assets/logo/social_links/instagram.svg'
+import TripadvisorIcon from '../assets/logo/social_links/tripadvisor.svg'
 
 const Header = ({ statusHandler }) => {
   const PhoneLink = () => {
     return (
       <>
-        <div className="flex items-center min-[700px]:hidden">
+        <div className="flex items-center min-[790px]:hidden">
           <CallTo phone="+33468216042">
             <PhoneIcon fill="#C7A99A" width="16" height="16" />
           </CallTo>
         </div>
-        <button className="hidden items-center justify-between gap-4 py-2 px-2 rounded text-white bg-[#C7A99A] min-[700px]:flex">
+        <button className="hidden items-center justify-between gap-4 py-2 px-2 rounded text-white bg-[#C7A99A] min-[790px]:flex">
           <PhoneIcon />
           <CallTo phone="+33468216042">04 68 21 60 42</CallTo>
         </button>
+      </>
+    )
+  }
+  const NetworksLinks = () => {
+    return (
+      <>
+        <ul className="hidden list-none flex-row gap-4 min-[650px]:flex">
+          <li className="m-auto">
+            <ExternalLink url="https://www.facebook.com/profile.php?id=61568418431280">
+              <FacebookIcon fill="#C7A99A" />
+            </ExternalLink>
+          </li>
+          <li className="m-auto">
+            <ExternalLink url="https://www.instagram.com/lazareperpignan/">
+              <InstagramIcon fill="#C7A99A" />
+            </ExternalLink>
+          </li>
+          <li className="m-auto">
+            <ExternalLink url="https://www.tripadvisor.com/Restaurant_Review-g187156-d31121962-Reviews-Le_Lazare-Perpignan_Pyrenees_Orientales_Occitanie.html">
+              <TripadvisorIcon fill="#C7A99A" />
+            </ExternalLink>
+          </li>
+        </ul>
+        {/* <ul className="list-none flex flex-row gap-4 justify-start text-[#F2F2F2] text-left">
+          <li className="m-auto">
+            <GeoIcon fill="#C7A99A" />
+          </li>
+          <li className="font-light text-xs">
+            5 rue Lazare Escarguel, 66000 Perpignan
+          </li>
+        </ul> */}
       </>
     )
   }
@@ -56,6 +91,7 @@ const Header = ({ statusHandler }) => {
           >
             Découvrir les menus
           </NavLink>
+          <NetworksLinks />
           <PhoneLink />
         </nav>
         {/* Small screen */}
