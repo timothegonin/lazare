@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { NavLink } from 'react-router'
+import { NavLink, Link } from 'react-router'
 import ExternalLink from './ExternalLink'
 import CallTo from './CallTo'
 import Logo from '../assets/logo/logo-min.svg'
@@ -114,7 +114,9 @@ const Header = ({ statusHandler }) => {
   return (
     <header className="flex justify-between p-5 bg-[#1C3454]">
       <div>
-        <Logo width="120" />
+        <Link to="/">
+          <Logo width="120" />
+        </Link>
       </div>
       <Navbar />
     </header>
