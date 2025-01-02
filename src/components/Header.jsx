@@ -18,7 +18,7 @@ const Header = ({ statusHandler }) => {
             <PhoneIcon fill="#C7A99A" width="16" height="16" />
           </CallTo>
         </div>
-        <button className="hidden items-center justify-between gap-4 py-2 px-2 rounded text-white bg-[#C7A99A] min-[790px]:flex">
+        <button className="hidden items-center justify-between gap-4 py-1.5 px-2 rounded text-white bg-[#C7A99A] min-[790px]:flex">
           <PhoneIcon />
           <CallTo phone="+33468216042">04 68 21 60 42</CallTo>
         </button>
