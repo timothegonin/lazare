@@ -4,9 +4,9 @@ const Menu = () => {
   return (
     <>
       <PagesNavigation />
-      <section className="bg-[#F2F2F2] p-10 text-left flex flex-col gap-5">
-        <h1>La carte</h1>
-        <table className="w-full">
+      <section className="bg-[#F2F2F2] p-10 text-left flex flex-col gap-5 items-center">
+        <h1 className="hidden">La carte</h1>
+        <table className="w-full max-w-screen-sm">
           <th>
             <h2>ENTRÉES</h2>
           </th>
@@ -18,7 +18,7 @@ const Menu = () => {
             <td className="align-top">17€</td>
           </tr>
         </table>
-        <table className="w-full">
+        <table className="w-full max-w-screen-sm">
           <th>
             <h2>PLATS</h2>
           </th>
@@ -29,7 +29,7 @@ const Menu = () => {
             <td className="align-top">35€</td>
           </tr>
         </table>
-        <table className="w-full">
+        <table className="w-full max-w-screen-sm">
           <th>
             <h2>DESSERTS</h2>
           </th>
