@@ -18,7 +18,7 @@ const FormuleCard = () => {
   const formuleDetailsStatus = isOpen ? '' : 'hidden'
 
   return (
-    <article className="flex flex-col items-start bg-white rounded p-3 max-w-screen-sm min-w-96">
+    <article className="flex flex-col items-start bg-white rounded p-3 w-full max-w-screen-sm min-w-96">
       <div className="flex justify-between w-full font-bold">
         <h4>MENU DE L&apos;AUTOMNE À L&apos;HIVER</h4>
         <h5>59€</h5>
