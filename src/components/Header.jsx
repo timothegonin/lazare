@@ -56,41 +56,49 @@ const Header = ({ statusHandler }) => {
       </>
     )
   }
+
+  const Navlinks = () => {
+    return (
+      <div className="hidden gap-4 min-[625px]:flex">
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            isActive
+              ? 'text-white underline underline-offset-2'
+              : 'text-[#C7A99A]'
+          }
+        >
+          Accueil
+        </NavLink>
+        <NavLink
+          to="/menu"
+          className={({ isActive }) =>
+            isActive
+              ? 'text-white underline underline-offset-2'
+              : 'text-[#C7A99A]'
+          }
+        >
+          Découvrir la carte
+        </NavLink>
+        <NavLink
+          to="/formules"
+          className={({ isActive }) =>
+            isActive
+              ? 'text-white underline underline-offset-2'
+              : 'text-[#C7A99A]'
+          }
+        >
+          Découvrir les menus
+        </NavLink>
+      </div>
+    )
+  }
   const Navbar = () => {
     return (
       <>
         {/* Large screen */}
-        <nav className="hidden items-center gap-4 min-[600px]:flex">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              isActive
-                ? 'text-white underline underline-offset-2'
-                : 'text-[#C7A99A]'
-            }
-          >
-            Accueil
-          </NavLink>
-          <NavLink
-            to="/menu"
-            className={({ isActive }) =>
-              isActive
-                ? 'text-white underline underline-offset-2'
-                : 'text-[#C7A99A]'
-            }
-          >
-            Découvrir la carte
-          </NavLink>
-          <NavLink
-            to="/formules"
-            className={({ isActive }) =>
-              isActive
-                ? 'text-white underline underline-offset-2'
-                : 'text-[#C7A99A]'
-            }
-          >
-            Découvrir les menus
-          </NavLink>
+        <nav className="flex items-center gap-4">
+          <Navlinks />
           <NetworksLinks />
           <PhoneLink />
           <div className="flex items-center">
