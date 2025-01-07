@@ -95,19 +95,16 @@ const Header = ({ statusHandler }) => {
   }
   const Navbar = () => {
     return (
-      <>
-        {/* Large screen */}
-        <nav className="flex items-center gap-4">
-          <Navlinks />
-          <NetworksLinks />
-          <PhoneLink />
-          <div className="flex items-center">
-            <button onClick={() => statusHandler()}>
-              <MenuIcon fill="#C7A99A" width="30" height="30" />
-            </button>
-          </div>
-        </nav>
-      </>
+      <nav className="flex items-center gap-4">
+        <Navlinks />
+        <NetworksLinks />
+        <PhoneLink />
+        <div className="flex items-center">
+          <button onClick={() => statusHandler()}>
+            <MenuIcon fill="#C7A99A" width="30" height="30" />
+          </button>
+        </div>
+      </nav>
     )
   }
 
