@@ -93,14 +93,6 @@ const Header = ({ statusHandler }) => {
           </NavLink>
           <NetworksLinks />
           <PhoneLink />
-        </nav>
-        {/* Small screen */}
-        <nav className="flex justify-center gap-4 min-[830px]:hidden">
-          {/* <div className="flex items-center">
-            <CallTo phone="+33468216042">
-              <PhoneIcon fill="#C7A99A" width="16" height="16" />
-            </CallTo>
-          </div> */}
           <div className="flex items-center">
             <button onClick={() => statusHandler()}>
               <MenuIcon fill="#C7A99A" width="30" height="30" />
