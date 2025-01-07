@@ -28,7 +28,7 @@ const Header = ({ statusHandler }) => {
   const NetworksLinks = () => {
     return (
       <>
-        <ul className="hidden list-none flex-row gap-4 min-[650px]:flex">
+        <ul className="hidden list-none flex-row gap-4 min-[830px]:flex">
           <li className="m-auto">
             <ExternalLink url="https://www.facebook.com/profile.php?id=61568418431280">
               <FacebookIcon fill="#C7A99A" />
@@ -60,7 +60,7 @@ const Header = ({ statusHandler }) => {
     return (
       <>
         {/* Large screen */}
-        <nav className="hidden items-center gap-4 min-[550px]:flex">
+        <nav className="hidden items-center gap-4 min-[600px]:flex">
           <NavLink
             to="/"
             className={({ isActive }) =>
@@ -95,12 +95,12 @@ const Header = ({ statusHandler }) => {
           <PhoneLink />
         </nav>
         {/* Small screen */}
-        <nav className="flex justify-center gap-4 min-[550px]:hidden">
-          <div className="flex items-center">
+        <nav className="flex justify-center gap-4 min-[830px]:hidden">
+          {/* <div className="flex items-center">
             <CallTo phone="+33468216042">
               <PhoneIcon fill="#C7A99A" width="16" height="16" />
             </CallTo>
-          </div>
+          </div> */}
           <div className="flex items-center">
             <button onClick={() => statusHandler()}>
               <MenuIcon fill="#C7A99A" width="30" height="30" />
@@ -112,13 +112,13 @@ const Header = ({ statusHandler }) => {
   }
 
   return (
-    <header className="flex justify-between p-5 bg-[#1C3454]">
-      <div>
+    <header className="flex justify-center bg-[#1C3454]">
+      <div className="max-w-screen-xl flex justify-between p-5 w-full">
         <Link to="/">
           <Logo width="120" />
         </Link>
+        <Navbar />
       </div>
-      <Navbar />
     </header>
   )
 }
