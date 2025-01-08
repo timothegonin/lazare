@@ -99,7 +99,7 @@ const Header = ({ statusHandler }) => {
         <Navlinks />
         <NetworksLinks />
         <PhoneLink />
-        <div className="flex items-center">
+        <div className="flex items-center min-[830px]:hidden">
           <button onClick={() => statusHandler()}>
             <MenuIcon fill="#C7A99A" width="30" height="30" />
           </button>
