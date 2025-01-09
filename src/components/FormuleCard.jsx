@@ -9,7 +9,7 @@ const FormuleCard = () => {
 
   const Divider = () => {
     return (
-      <tr className="text-center font-bold">
+      <tr className="text-start font-bold">
         <td>ou</td>
       </tr>
     )
@@ -18,9 +18,9 @@ const FormuleCard = () => {
   const formuleDetailsStatus = isOpen ? '' : 'hidden'
 
   return (
-    <article className="flex flex-col items-start bg-white rounded p-3 w-full max-w-screen-sm min-w-96">
+    <article className="flex flex-col items-start bg-white rounded p-3  gap-5 w-full max-w-screen-sm">
       <div className="flex justify-between w-full font-bold">
-        <h4>MENU DE L&apos;AUTOMNE À L&apos;HIVER</h4>
+        <h4 className="text-start">MENU DE L&apos;AUTOMNE À L&apos;HIVER</h4>
         <h5>59€</h5>
       </div>
       <div className={`${formuleDetailsStatus} flex flex-col gap-5`}>
