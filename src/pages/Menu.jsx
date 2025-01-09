@@ -19,7 +19,7 @@ const Menu = () => {
                   Maquereaux, arc en ciel de choux, vinaigrette estragon et miel
                   de Tautavel
                 </td>
-                <td className="align-top">17€</td>
+                <td className="align-top text-right font-semibold">17€</td>
               </tr>
             </tbody>
           </table>
@@ -34,7 +34,7 @@ const Menu = () => {
                 <td>
                   Dos de lieu jaune sauvage au savagnin, salsifis et trompettes
                 </td>
-                <td className="align-top">35€</td>
+                <td className="align-top text-right font-semibold">35€</td>
               </tr>
             </tbody>
           </table>
@@ -47,7 +47,7 @@ const Menu = () => {
               </tr>
               <tr>
                 <td>Crème brulée chou fleur, vanille bleue</td>
-                <td className="align-top">15€</td>
+                <td className="align-top text-right font-semibold">15€</td>
               </tr>
             </tbody>
           </table>
