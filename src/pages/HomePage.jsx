@@ -4,7 +4,7 @@ import chefPicture from '../assets/images/lazareChef.jpg'
 const HomePage = () => {
   return (
     // <div className="bg-[#F2F2F2] bg-[url('/src/assets/images/lazareChef.jpg')] bg-clip-border bg-cover bg-no-repeat bg-center h-[550px]">
-    <div className="relative">
+    <div className="relative flex flex-col">
       <div className="flex flex-col items-center absolute left-0 right-0">
         <div
           className="pt-14 px-5 pb-32 h-[24px] w-full"
@@ -24,11 +24,13 @@ const HomePage = () => {
           Découvrir la carte & les menus
         </Link>
       </div>
-      <img
+      <div className="bg-[#F2F2F2] bg-[url('/src/assets/images/lazareChef.jpg')] bg-clip-border bg-cover bg-no-repeat bg-[center_bottom_-5rem] h-[498px]"></div>
+      {/* <img
+        className="object-cover  object-bottom"
         src={chefPicture}
         alt="Photograph of the chef at Lazare in front of his restaurant"
-      />
-      <div className="text-start p-10 flex flex-col gap-5">
+      /> */}
+      <div className="bg-white text-start p-10 flex flex-col gap-5">
         <h3 className="text-center  chef-name text-xl">
           Charles : Le Chef derrière Le Lazare
         </h3>
