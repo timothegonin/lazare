@@ -24,12 +24,12 @@ const HomePage = () => {
           Découvrir la carte & les menus
         </Link>
       </div>
-      <div className="bg-[#F2F2F2] bg-[url('/src/assets/images/lazareChef.jpg')] bg-clip-border bg-cover bg-no-repeat bg-[center_bottom_-5rem] h-[498px]"></div>
-      {/* <img
-        className="object-cover  object-bottom"
+      {/* <div className="bg-[#F2F2F2] bg-[url('/src/assets/images/lazareChef.jpg')] bg-clip-border bg-cover bg-no-repeat bg-[center_bottom_-5rem] h-[498px]"></div> */}
+      <img
+        className="object-cover "
         src={chefPicture}
         alt="Photograph of the chef at Lazare in front of his restaurant"
-      /> */}
+      />
       <div className="bg-white text-start p-10 flex flex-col gap-5">
         <h3 className="text-center  chef-name text-xl">
           Charles : Le Chef derrière Le Lazare
