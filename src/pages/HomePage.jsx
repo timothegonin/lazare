@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { Link } from 'react-router'
 import chefPicture from '../assets/images/lazareChef.jpg'
 
@@ -64,6 +65,11 @@ const HomePage = () => {
       </div>
     </div>
   )
+}
+
+BlueOvelray.propTypes = {
+  position: PropTypes.string,
+  children: PropTypes.arrayOf(PropTypes.element),
 }
 
 export default HomePage
