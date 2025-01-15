@@ -15,6 +15,19 @@ const BlueOvelray = ({ position, children }) => {
     </div>
   )
 }
+const WhiteOvelray = ({ position, children }) => {
+  return (
+    <div
+      className={`flex flex-col items-center absolute ${position} w-full`}
+      style={{
+        background:
+          'linear-gradient(0deg, rgba(255,255,255,1) 44%, rgba(255,255,255,0) 100%)',
+      }}
+    >
+      {children}
+    </div>
+  )
+}
 
 const HomePage = () => {
   return (
@@ -36,7 +49,8 @@ const HomePage = () => {
         alt="Photograph of the chef at Lazare in front of his restaurant"
       />
       <div className="bg-white text-start p-10 flex flex-col gap-5 relative">
-        <h3 className="text-center  chef-name text-xl">
+        <WhiteOvelray position="left-0 right-0 top-[-100px] h-[180px] z-0" />
+        <h3 className="text-center  chef-name text-xl z-10">
           Charles : Le Chef derrière Le Lazare
         </h3>
         <p>
@@ -68,6 +82,10 @@ const HomePage = () => {
 }
 
 BlueOvelray.propTypes = {
+  position: PropTypes.string,
+  children: PropTypes.arrayOf(PropTypes.element),
+}
+WhiteOvelray.propTypes = {
   position: PropTypes.string,
   children: PropTypes.arrayOf(PropTypes.element),
 }
