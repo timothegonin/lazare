@@ -45,7 +45,7 @@ const HomePage = () => {
           Découvrir la carte & les menus
         </Link>
       </BlueOvelray>
-      <div className="relative">
+      <div className="relative w-full">
         <img
           className="object-cover w-full"
           src={chefPicture}
