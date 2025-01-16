@@ -40,11 +40,13 @@ const HomePage = () => {
         </h3>
         <Link
           to="/menu"
-          className="px-4 py-3 rounded-md bg-[#C7A99A] text-[#F2F2F2]"
+          className="px-4 py-3 rounded-md bg-[#C7A99A] text-[#F2F2F2] md:hidden"
         >
           Découvrir la carte & les menus
         </Link>
       </BlueOvelray>
+
+      {/* PICTURE */}
       <div className="relative w-full">
         <img
           className="object-cover w-full"
@@ -53,13 +55,18 @@ const HomePage = () => {
         />
         <WhiteOvelray position="left-0 right-0 bottom-[-80px] h-[180px]" />
       </div>
-      {/* <img
-        className="object-cover "
-        src={chefPicture}
-        alt="Photograph of the chef at Lazare in front of his restaurant"
-      /> */}
+
+      {/* PRESENTATION TEXT */}
       <div className="bg-white text-start p-10 flex flex-col gap-5 relative">
-        <h3 className="text-center  chef-name text-xl z-20">
+        <div className="hidden absolute left-0 right-0 top-[148px] z-30 md:flex justify-center ">
+          <Link
+            to="/menu"
+            className=" px-4 py-3 rounded-md bg-[#C7A99A] text-[#F2F2F2]"
+          >
+            Découvrir la carte & les menus
+          </Link>
+        </div>
+        <h3 className="text-center  chef-name text-xl z-20 md:pt-60">
           Charles : Le Chef derrière Le Lazare
         </h3>
         <p>
