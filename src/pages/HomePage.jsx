@@ -9,6 +9,7 @@ const BlueOvelray = ({ position, children }) => {
       style={{
         background:
           'linear-gradient(180deg, rgba(28,52,84,1) 44%, rgba(255,255,255,0) 100%)',
+        zIndex: 10,
       }}
     >
       {children}
@@ -22,6 +23,7 @@ const WhiteOvelray = ({ position, children }) => {
       style={{
         background:
           'linear-gradient(0deg, rgba(255,255,255,1) 44%, rgba(255,255,255,0) 100%)',
+        zIndex: 10,
       }}
     >
       {children}
@@ -31,7 +33,7 @@ const WhiteOvelray = ({ position, children }) => {
 
 const HomePage = () => {
   return (
-    <div className="relative flex flex-col">
+    <div className="relative flex flex-col md:flex-row items-start">
       <BlueOvelray postition="left-0 right-0">
         <h3 className="py-14 px-5 text-3xl text-[#C7A99A] citation ">
           Pas de hasard, que des rendez-vous
@@ -43,14 +45,21 @@ const HomePage = () => {
           Découvrir la carte & les menus
         </Link>
       </BlueOvelray>
-      <img
+      <div className="relative">
+        <img
+          className="object-cover w-full"
+          src={chefPicture}
+          alt="Photograph of the chef at Lazare in front of his restaurant"
+        />
+        <WhiteOvelray position="left-0 right-0 bottom-[-80px] h-[180px]" />
+      </div>
+      {/* <img
         className="object-cover "
         src={chefPicture}
         alt="Photograph of the chef at Lazare in front of his restaurant"
-      />
+      /> */}
       <div className="bg-white text-start p-10 flex flex-col gap-5 relative">
-        <WhiteOvelray position="left-0 right-0 top-[-100px] h-[180px] z-0" />
-        <h3 className="text-center  chef-name text-xl z-10">
+        <h3 className="text-center  chef-name text-xl z-20">
           Charles : Le Chef derrière Le Lazare
         </h3>
         <p>
