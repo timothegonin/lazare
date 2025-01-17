@@ -61,7 +61,7 @@ const Header = ({ statusHandler }) => {
     return (
       <div className="hidden gap-4 min-[625px]:flex">
         <NavLink
-          to="/"
+          to="/lazare/"
           className={({ isActive }) =>
             isActive
               ? 'text-white underline underline-offset-2'
@@ -71,7 +71,7 @@ const Header = ({ statusHandler }) => {
           Accueil
         </NavLink>
         <NavLink
-          to="/menu"
+          to="/lazare/menu"
           className={({ isActive }) =>
             isActive
               ? 'text-white underline underline-offset-2'
@@ -81,7 +81,7 @@ const Header = ({ statusHandler }) => {
           Découvrir la carte
         </NavLink>
         <NavLink
-          to="/formules"
+          to="/lazare/formules"
           className={({ isActive }) =>
             isActive
               ? 'text-white underline underline-offset-2'
@@ -111,7 +111,7 @@ const Header = ({ statusHandler }) => {
   return (
     <header className="flex justify-center bg-[#1C3454]">
       <div className="max-w-screen-xl flex justify-between p-5 w-full">
-        <Link to="/">
+        <Link to="/lazare/">
           <Logo width="120" />
         </Link>
         <Navbar />

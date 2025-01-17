@@ -11,7 +11,7 @@ const PagesNavigation = () => {
       className={`flex ${navBarLinksOrder} justify-evenly items-center h-[115px] bg-[#1C3454]`}
     >
       <NavLink
-        to="/menu"
+        to="/lazare/menu"
         className="text-2xl font-bold"
         style={({ isActive }) => ({
           color: isActive ? 'white' : '#C7A99A',
@@ -21,7 +21,7 @@ const PagesNavigation = () => {
         La carte
       </NavLink>
       <NavLink
-        to="/formules"
+        to="/lazare/formules"
         className="text-2xl font-bold"
         style={({ isActive }) => ({
           color: isActive ? 'white' : '#C7A99A',

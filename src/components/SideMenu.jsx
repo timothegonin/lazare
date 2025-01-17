@@ -12,7 +12,7 @@ import GeoIcon from '../assets/logo/social_links/geo.svg'
 const SideMenu = ({ status, statusHandler }) => {
   return (
     <aside
-      className={`${status ? 'fixed' : 'hidden'} top-0 left-0 bottom-0 right-0`}
+      className={`${status ? 'fixed' : 'hidden'} top-0 left-0 bottom-0 right-0 z-30`}
     >
       <div
         className="flex flex-col items-end h-full"
@@ -24,7 +24,7 @@ const SideMenu = ({ status, statusHandler }) => {
           </button>
           <nav className="flex flex-col items-start gap-4 mt-6">
             <NavLink
-              to="/"
+              to="/lazare/"
               className={({ isActive }) =>
                 isActive
                   ? 'text-white underline underline-offset-2'
@@ -34,7 +34,7 @@ const SideMenu = ({ status, statusHandler }) => {
               Accueil
             </NavLink>
             <NavLink
-              to="/menu"
+              to="/lazare/menu"
               className={({ isActive }) =>
                 isActive
                   ? 'text-white underline underline-offset-2'
@@ -44,7 +44,7 @@ const SideMenu = ({ status, statusHandler }) => {
               Découvrir la carte
             </NavLink>
             <NavLink
-              to="/formules"
+              to="/lazare/formules"
               className={({ isActive }) =>
                 isActive
                   ? 'text-white underline underline-offset-2'
