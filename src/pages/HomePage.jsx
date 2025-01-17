@@ -39,7 +39,7 @@ const HomePage = () => {
           Pas de hasard, que des rendez-vous
         </h3>
         <Link
-          to="/menu"
+          to="/lazare/menu"
           className="px-4 py-3 rounded-md bg-[#C7A99A] text-[#F2F2F2] md:hidden"
         >
           Découvrir la carte & les menus
@@ -61,7 +61,7 @@ const HomePage = () => {
         <div className="bg-white text-start p-10 mb-10 flex flex-col gap-5 relative flex-1">
           <div className="hidden absolute left-0 right-0 top-[188px] z-30 md:flex justify-center items-end">
             <Link
-              to="/menu"
+              to="/lazare/menu"
               className="px-4 py-3 rounded-md bg-[#C7A99A] text-[#F2F2F2]"
             >
               Découvrir la carte & les menus
