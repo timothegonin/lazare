@@ -11,7 +11,7 @@ const Divider = () => {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#F2F2F2] flex justify-center">
+    <footer className="bg-[#F2F2F2] flex justify-center relative z-20">
       <div className="max-w-screen-xl flex flex-col gap-5 px-5 py-10 w-full">
         {/* 1 ADRESS */}
         <div className="flex flex-col items-start">
