@@ -4,7 +4,7 @@ const Menu = () => {
   return (
     <>
       <PagesNavigation />
-      <section className="bg-[#F2F2F2] p-10 text-left flex flex-col gap-5 items-center ">
+      <section className="bg-[#F2F2F2] px-5 py-20 text-left flex flex-col gap-5 items-center h-full">
         <h1 className="hidden">La carte</h1>
         <div className="bg-white rounded p-3 w-full max-w-screen-sm">
           <table className="w-full">

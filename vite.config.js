@@ -17,5 +17,5 @@ export default defineConfig({
       include: '**/*.svg',
     }),
   ],
-  base: '/',
+  base: '/lazare/',
 })
