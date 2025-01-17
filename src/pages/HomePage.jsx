@@ -47,7 +47,7 @@ const HomePage = () => {
       </BlueOvelray>
 
       {/* PICTURE */}
-      <div className="relative w-full">
+      <div className="relative w-full flex-1">
         <img
           className="object-cover w-full"
           src={chefPicture}
@@ -57,7 +57,7 @@ const HomePage = () => {
       </div>
 
       {/* PRESENTATION TEXT */}
-      <div className="bg-white text-start p-10 flex flex-col gap-5 relative">
+      <div className="bg-white text-start p-10 mb-10 flex flex-col gap-5 relative flex-1">
         <div className="hidden absolute left-0 right-0 top-[148px] z-30 md:flex justify-center ">
           <Link
             to="/menu"
