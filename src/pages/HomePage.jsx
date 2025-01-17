@@ -9,7 +9,7 @@ const BlueOvelray = ({ position, children }) => {
       style={{
         background:
           'linear-gradient(180deg, rgba(28,52,84,1) 44%, rgba(255,255,255,0) 100%)',
-        zIndex: 10,
+        zIndex: 20,
       }}
     >
       {children}
@@ -47,7 +47,8 @@ const HomePage = () => {
       </BlueOvelray>
 
       {/* PICTURE */}
-      <div className="relative w-full flex-1">
+      <div className="relative w-full self-center flex-1">
+        <WhiteOvelray position="left-0 right-0 top-[-80px] h-[180px] rotate-180" />
         <img
           className="object-cover w-full"
           src={chefPicture}
@@ -58,10 +59,10 @@ const HomePage = () => {
 
       {/* PRESENTATION TEXT */}
       <div className="bg-white text-start p-10 mb-10 flex flex-col gap-5 relative flex-1">
-        <div className="hidden absolute left-0 right-0 top-[148px] z-30 md:flex justify-center ">
+        <div className="hidden absolute left-0 right-0 top-[188px] z-30 md:flex justify-center items-end">
           <Link
             to="/menu"
-            className=" px-4 py-3 rounded-md bg-[#C7A99A] text-[#F2F2F2]"
+            className="px-4 py-3 rounded-md bg-[#C7A99A] text-[#F2F2F2]"
           >
             Découvrir la carte & les menus
           </Link>
